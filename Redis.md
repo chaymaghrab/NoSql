@@ -89,32 +89,32 @@ docker exec -it redis-container redis-cli
 
 # Commandes Redis — Gestion des clés 
 
-## 📝 Créer / Écrire
+## Créer / Écrire
 ```bash
 SET clé valeur
 ```
 
-## 📖 Lire une valeur
+## Lire une valeur
 ```bash
 GET clé
 ```
 
-## ❌ Supprimer une clé
+## Supprimer une clé
 ```bash
 DEL clé
 ```
 
-## 📂 Lister toutes les clés
+## Lister toutes les clés
 ```bash
 KEYS *
 ```
 
-## ⏱️ Définir une expiration
+##  Définir une expiration
 ```bash
 EXPIRE clé secondes
 ```
 
-## 🕒 Temps restant avant expiration
+## Temps restant avant expiration
 ```bash
 TTL clé
 ```
@@ -126,7 +126,7 @@ TTL clé
 
 ---
 
-## 🔢 Manipulation de nombres (Compteurs)
+## Manipulation de nombres (Compteurs)
 
 ### ➤ Initialiser un compteur
 ```bash
@@ -143,7 +143,7 @@ INCR visites
 DECR visites
 ```
 
-## 📜 Listes (Lists)
+##  Listes (Lists)
 
 ### ➤ Ajouter dans la liste
 
@@ -174,7 +174,7 @@ LPOP maListe
 RPOP maListe
 ```
 
-## 🔷 Sets (Ensembles)
+## Sets (Ensembles)
 
 ➡️ Un set contient des valeurs **uniques**, dans un **ordre non garanti**.
 
@@ -198,7 +198,7 @@ SREM monSet valeur
 SUNION set1 set2
 ```
 
-## 🏆 Sorted Sets (ZSET) — Ensembles ordonnés
+## Sorted Sets (ZSET) — Ensembles ordonnés
 
 ➡️ Chaque élément possède un **score**  
 ➡️ Les éléments sont **triés automatiquement**
@@ -227,7 +227,7 @@ ZREVRANGE scores 0 -1
 ZRANK scores "Augustin"
 ```
 
-## 🏷️ Hashes (objet JSON)
+## Hashes (objet JSON)
 
 ➡️ Représente un objet avec plusieurs champs internes.
 
@@ -278,7 +278,7 @@ PUBLISH mesCours "Un nouveau cours MongoDB est disponible"
 PSUBSCRIBE mes*
 ```
 
-## 🗂️ Bases de données internes Redis
+## Bases de données internes Redis
 
 ➡️ Redis contient **16 bases** (indexées de **0 à 15**)
 
